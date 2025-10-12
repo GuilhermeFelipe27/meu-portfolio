@@ -47,7 +47,7 @@ Aplicativo mobile para cálculo do Índice de Massa Corporal
 
 ### 📊 [CRUD - Cadastro de Clientes](https://github.com/GuilhermeFelipe27/CRUD-simples)
 Sistema de gerenciamento de clientes com operações CRUD
-- **Tecnologias:** [Especificar tecnologias usadas]
+- **Tecnologias:** HTML, CSS, JavaScript, LocalStorage
 - **Funcionalidades:** Create, Read, Update, Delete
 
 ### 🦸‍♂️ [Marvel API](https://github.com/GuilhermeFelipe27/marvel-api)
@@ -214,4 +214,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 <sub>⭐ Se este projeto te ajudou, considere dar uma estrela!</sub>
-
