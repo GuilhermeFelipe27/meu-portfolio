@@ -198,14 +198,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-## 🙏 Agradecimentos
-
-- **ETEC Prof Massuyuki Kawano** - Pela formação técnica
-- **Comunidade Dev** - Pelo apoio e conhecimento compartilhado
-- **GitHub Pages** - Pela hospedagem gratuita
-
----
-
 <div align="center">
 
 ### 💼 Em busca da primeira oportunidade profissional
@@ -222,3 +214,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 <sub>⭐ Se este projeto te ajudou, considere dar uma estrela!</sub>
+
