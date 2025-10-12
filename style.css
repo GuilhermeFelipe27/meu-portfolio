@@ -1,3 +1,4 @@
+/* ===== RESET E BASE ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,23 +9,52 @@ body {
     background-color: #222;
     color: white;
     font-family: sans-serif;
-    /* line-height: 120%; */
+    line-height: 1.4;
 }
 
+/* ===== TEMA CLARO ===== */
+.ligth {
+    background-color: white;
+    color: #222;
+    font-family: sans-serif;
+}
+
+.ligth header {
+    background-color: white;
+    color: #222;
+}
+
+.ligth div.divNome {
+    border-bottom: 2px solid black;
+}
+
+.ligth section {
+    background-color: white;
+    color: #222;
+}
+
+.ligth a {
+    color: black;
+    border: 1px solid black;
+}
+
+/* ===== SEÇÕES ===== */
 section {
     padding: 40px;
     border-bottom: 1px solid #ccc;
 }
 
+/* ===== HEADER ===== */
 header {
     background-color: #111;
     text-align: center;
     align-content: center;
     padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
-    border-bottom: 2px solid white;
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
@@ -42,11 +72,26 @@ header li {
     display: inline-block;
 }
 
+.nome {
+    font-size: 2rem;
+}
+
+.divNome {
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+/* ===== SEÇÕES PRINCIPAIS ===== */
 .informacoes {
     background-color: #333;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 .contato {
@@ -60,14 +105,18 @@ header li {
     background-color: #333;
     display: flex;
     flex-direction: column;
-    gap: 10px;  
+    gap: 10px;
 }
 
-.container-rojetos {
+.container-projetos {
     background-color: #555;
 }
 
-.projetos {
+.container-projetos h2 {
+    margin-bottom: 15px;
+}
+
+.projetos-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -75,175 +124,195 @@ header li {
     gap: 20px;
 }
 
-/* ========================================
-   CSS RESPONSIVO PARA MOBILE E TABLETS
-======================================== */
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-/* Media Queries para Mobile */
+/* ===== ELEMENTOS GERAIS ===== */
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 1px 1px 0 0 white;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+a:hover {
+    color: #ccc;
+    transform: translateY(+5px);
+}
+
+.button {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonLigth {
+    background-color: silver;
+    color: white;
+}
+
+.buttonLigth:hover {
+    background-color: rgb(232, 232, 232);
+    padding: 18px;
+}
+
+.buttonDark {
+    background-color: rgb(30, 22, 22);
+    color: white;
+}
+
+/* ===== RESPONSIVIDADE PARA MOBILE ===== */
+
+/* Mobile (768px e menores) */
 @media screen and (max-width: 768px) {
     /* Header responsivo */
     header {
-        padding: 20px 15px !important;
+        padding: 20px 15px;
+        flex-direction: column;
     }
     
-    header h1, .nome {
-        font-size: 1.8rem !important;
-        text-align: center !important;
+    .nome {
+        font-size: 1.6rem;
     }
     
-    /* Botões de tema em coluna no mobile */
     .divNome {
-        flex-direction: column !important;
-        gap: 15px !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
     
     .divNome > div {
-        display: flex !important;
-        justify-content: center !important;
-        gap: 10px !important;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
     
-    /* Lista de tecnologias responsiva */
+    /* Lista de tecnologias */
     header ul {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 10px !important;
-        margin-top: 20px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
     }
     
     header li {
-        font-size: 0.9rem !important;
-        padding: 5px 10px !important;
-        background: rgba(255,255,255,0.1) !important;
-        border-radius: 15px !important;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
     }
     
     /* Seções responsivas */
-    .informacoes, .contato, .formacoes, .container-projetos {
-        padding: 20px 15px !important;
-        margin: 10px 0 !important;
+    section {
+        padding: 20px 15px;
     }
     
     .informacoes h2, .contato h2, .formacoes h2, .container-projetos h2 {
-        font-size: 1.5rem !important;
-        text-align: center !important;
-        margin-bottom: 15px !important;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
     }
     
-    /* Projetos em coluna no mobile */
+    /* Projetos em coluna */
     .projetos-container {
-        flex-direction: column !important;
-        gap: 20px !important;
+        flex-direction: column;
+        gap: 20px;
     }
     
     .projetos {
-        width: 100% !important;
-        max-width: none !important;
-        padding: 15px !important;
-        text-align: center !important;
-        flex-direction: column !important;
+        width: 100%;
+        text-align: center;
     }
     
     .projetos h3 {
-        font-size: 1.2rem !important;
-        margin-bottom: 10px !important;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     
     /* Imagens responsivas */
     .projetos img {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 350px !important;
-        border-radius: 8px !important;
+        width: 100%;
+        height: auto;
+        max-width: 350px;
     }
     
-    /* Links dos projetos */
-    .projetos a {
-        display: inline-block !important;
-        margin-top: 10px !important;
-        padding: 8px 15px !important;
-        background: #4CAF50 !important;
-        color: white !important;
-        text-decoration: none !important;
-        border-radius: 5px !important;
-        font-size: 0.9rem !important;
-    }
-    
-    /* Textos responsivos */
-    p {
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-        text-align: justify !important;
-    }
-    
-    /* Botões responsivos */
+    /* Botões menores */
     .button {
-        padding: 8px 15px !important;
-        font-size: 0.9rem !important;
-        border-radius: 20px !important;
+        padding: 10px 15px;
+        font-size: 0.9rem;
     }
     
-    /* Seções com padding menor */
-    section {
-        padding: 20px 15px !important;
+    /* Textos otimizados */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
     }
 }
 
-/* Media Query para Tablets */
+/* Tablets (1024px e menores) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    header {
-        padding: 25px 20px !important;
-    }
-    
     .projetos-container {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .projetos {
-        flex: 0 1 45% !important;
-        margin: 10px !important;
+        flex: 0 1 45%;
+        margin: 10px;
     }
     
     .projetos img {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 400px !important;
-    }
-    
-    section {
-        padding: 30px 20px !important;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
     }
 }
 
-/* Media Query para telas muito pequenas */
+/* Telas muito pequenas (480px e menores) */
 @media screen and (max-width: 480px) {
-    header h1, .nome {
-        font-size: 1.4rem !important;
+    .nome {
+        font-size: 1.3rem;
     }
     
     header {
-        padding: 15px 10px !important;
-    }
-    
-    .informacoes, .contato, .formacoes, .container-projetos {
-        padding: 15px 10px !important;
-    }
-    
-    .projetos img {
-        max-width: 280px !important;
-    }
-    
-    header ul {
-        gap: 8px !important;
-    }
-    
-    header li {
-        font-size: 0.8rem !important;
-        padding: 4px 8px !important;
+        padding: 15px 10px;
     }
     
     section {
-        padding: 15px 10px !important;
+        padding: 15px 10px;
+    }
+    
+    .projetos img {
+        max-width: 280px;
+    }
+    
+    header ul {
+        gap: 8px;
+    }
+    
+    header li {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    .button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
 }
