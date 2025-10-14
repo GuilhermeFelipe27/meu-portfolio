@@ -176,7 +176,7 @@ ETEC Prof Massuyuki Kawano - Tupã/SP
 ### 🌐 Links Profissionais
 - **Portfolio:** [guilhermefelipe27.github.io/meu-portfolio](https://guilhermefelipe27.github.io/meu-portfolio)
 - **GitHub:** [github.com/GuilhermeFelipe27](https://github.com/GuilhermeFelipe27)
-- **LinkedIn:** [linkedin.com/in/guilherme-felipe-silva](https://www.linkedin.com/in/guilherme-felipe-silva/)
+- **LinkedIn:** [linkedin.com/in/guilherme-felipe-silva](https://www.linkedin.com/in/guilhermefelipe27)
 
 ---
 
@@ -214,3 +214,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 <sub>⭐ Se este projeto te ajudou, considere dar uma estrela!</sub>
+
